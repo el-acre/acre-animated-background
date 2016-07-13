@@ -1,0 +1,41 @@
+<link rel="import"
+    href="../polymer/polymer.html">
+
+<dom-module id="acre-animated-background-styles">
+    <template>
+        <style>
+            @keyframes placeHolderShimmer {
+                0% {
+                    background-position: -468px 0
+                }
+                100% {
+                    background-position: 468px 0
+                }
+            }
+
+            .acre-animated-background {
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-name: placeHolderShimmer;
+                animation-timing-function: linear;
+                background: #f6f7f8;
+                background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+                background-size: 800px 104px;
+                position: relative;
+            }
+
+            .acre-animated-background.tall {
+                height: 30px;
+            }
+
+            .acre-animated-background.medium {
+                height: 20px;
+            }
+
+            .acre-animated-background.short {
+                height: 10px;
+            }
+        </style>
+    </template>
+</dom-module>

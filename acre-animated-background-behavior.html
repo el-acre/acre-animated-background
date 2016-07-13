@@ -1,0 +1,24 @@
+<script>
+    /**
+     * Behavior that highlights stuff.
+     *
+     * @polymerBehavior AcreAnimatedBackgroundBehavior
+     */
+
+    AcreAnimatedBackgroundBehavior = {
+        /**
+         * The `_animatedBehavior` check if put a background animated or not
+         *
+         */
+        properties: {},
+
+        _animatedBehavior: function(e, size) {
+            if (!e) {
+                return 'acre-animated-background ' + size;
+            } else {
+                return '';
+            }
+        },
+
+    }
+</script>
